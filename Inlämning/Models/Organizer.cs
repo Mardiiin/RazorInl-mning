@@ -7,5 +7,9 @@ namespace Inlämning.Models
 {
     public class Organizer
     {
+        public int OrganizerID { get; set; }
+        public string Name { get; set; }
+        public string EmailAddress { get; set; }
+        public string phoneNumber { get; set; }
     }
 }

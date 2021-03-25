@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Inlämning.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Inlämning
 {
@@ -24,6 +26,11 @@ namespace Inlämning
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddDbContext<InlämningContext>(options =>
+                   options.UseSqlServer(Configuration.GetConnectionString("CS")));
+
+            services.AddDatabaseDeveloperPageExceptionFilter();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
