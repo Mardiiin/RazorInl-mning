@@ -9,8 +9,8 @@ namespace Inlämning.Models
     {
         public int AttendeeID { get; set; }
         public string Name { get; set; }
-        public string emailaddress { get; set; }
-        public int phoneNumber { get; set; }
+        public string Emailaddress { get; set; }
+        public string PhoneNumber { get; set; }
 
         public ICollection<EventJoin> EventJoins { get; set; }
 

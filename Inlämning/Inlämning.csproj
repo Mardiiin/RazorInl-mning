@@ -21,9 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\Event\" />
     <Folder Include="Pages\EventJoin\" />
-    <Folder Include="Pages\Attendee\" />
+    <Folder Include="Pages\Event\" />
     <Folder Include="Pages\Organizer\" />
   </ItemGroup>
 
