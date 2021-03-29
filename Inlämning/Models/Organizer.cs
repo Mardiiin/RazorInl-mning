@@ -10,6 +10,8 @@ namespace Inlämning.Models
         public int OrganizerID { get; set; }
         public string Name { get; set; }
         public string EmailAddress { get; set; }
-        public string phoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
+        public List<Event> Events { get; set; }
+
     }
 }

@@ -11,8 +11,8 @@ namespace Inlämning.Models
         public string Name { get; set; }
         public string Emailaddress { get; set; }
         public string PhoneNumber { get; set; }
+        public List<Event> Events { get; set; }
 
-        public ICollection<EventJoin> EventJoins { get; set; }
 
 
 
