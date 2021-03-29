@@ -1,0 +1,67 @@
+﻿@page
+@model Inlämning.Pages.MyEventsModel
+
+@{
+    ViewData["Title"] = "MyEvents";
+}
+
+<h1>MyEvents</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Event[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Event[0].Place)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Event[0].Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Event[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Event[0].SpotsAvailable)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Event)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Place)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SpotsAvailable)
+                </td>
+                <td>
+                    <form method="post">
+                        <input hidden name="id" value="@item.EventID"/>
+                        <input type="submit" value="Leave this event" class="btn-primary" />
+                    </form>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>
+
+    @Model.Message
+
+</h3>
