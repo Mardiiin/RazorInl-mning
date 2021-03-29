@@ -52,10 +52,10 @@ namespace Inlämning.Data
 
             Events.AddRange(new List<Event>()
             {
-                new Event() { Description= "GoodTime", Organizer = Organizers.Where(x => x.Name=="SeinfeldCast").FirstOrDefault(), Place= "North Yankton", Address= "Pinkerton Road 12", Date=DateTime.Parse ("2021-03-14 16:00"), SpotsAvailable= 120 },
-                new Event() { Description= "Blinders", Organizer = Organizers.Where(x => x.Name=="ThomasShelby").FirstOrDefault(), Place= "Small Heath", Address= "Jefferson Street 54", Date=DateTime.Parse ("2021-06-12 12:00"), SpotsAvailable= 88 },
-                new Event() { Description= "ShowdownInHell", Organizer = Organizers.Where(x => x.Name=="Lord Satan").FirstOrDefault(), Place= "Hell", Address= "Sheeesh street 12", Date=DateTime.Parse ("2021-04-15 10:00"), SpotsAvailable= 76 },
-                new Event() { Description= "Guns", Organizer = Organizers.Where(x => x.Name=="Lavon").FirstOrDefault(), Place= "Göteborg", Address= "Chiperton Dinkle 12", Date=DateTime.Parse ("2021-09-12 18:00"), SpotsAvailable= 25 }
+                new Event() { Description= "GoodTime", Organizer = Organizers.Where(o => o.Name=="SeinfeldCast").FirstOrDefault(), Place= "North Yankton", Address= "Pinkerton Road 12", Date=DateTime.Parse ("2021-03-14 16:00"), SpotsAvailable= 120 },
+                new Event() { Description= "Blinders", Organizer = Organizers.Where(o => o.Name=="ThomasShelby").FirstOrDefault(), Place= "Small Heath", Address= "Jefferson Street 54", Date=DateTime.Parse ("2021-06-12 12:00"), SpotsAvailable= 88 },
+                new Event() { Description= "ShowdownInHell", Organizer = Organizers.Where(o => o.Name=="Lord Satan").FirstOrDefault(), Place= "Hell", Address= "Sheeesh street 12", Date=DateTime.Parse ("2021-04-15 10:00"), SpotsAvailable= 76 },
+                new Event() { Description= "Guns", Organizer = Organizers.Where(o => o.Name=="Lavon").FirstOrDefault(), Place= "Göteborg", Address= "Chiperton Dinkle 12", Date=DateTime.Parse ("2021-09-12 18:00"), SpotsAvailable= 25 }
 
 
             });
